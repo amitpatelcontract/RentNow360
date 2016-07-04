@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.firebase.samples.logindemo">
+    <uses-sdk tools:overrideLibrary="com.google.vr.widgets.common,com.google.vr.sdk.widgets.pano"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- USE_CREDENTIALS is necessary for Google+ login -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- GET_ACCOUNTS is necessary to display email address of logged in user. This permission is optional -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".LoginDemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NoActionBarTheme"
+        tools:replace="android:label, android:allowBackup">
+        <activity
+            android:name=".auth.ChooserActivity"
+
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.UploadProfilePicturesActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity" />
+        <!--<activity android:name=".activities.TwitterOAuthActivity"></activity>-->
+        <!--<activity android:name=".androidchat.IndividualChat"></activity>-->
+        <activity android:name=".activities.ListofProducts"></activity>
+        <activity android:name=".activities.ProfileActivity"></activity>
+        <activity android:name=".auth.AnonymousAuthActivity"></activity>
+        <activity android:name=".auth.EmailPasswordActivity"></activity>
+        <activity android:name=".auth.FacebookLoginActivity"></activity>
+        <activity android:name=".auth.GoogleSignInActivity"></activity>
+        <activity android:name=".activities.CreateProfile"></activity>
+        <activity android:name=".activities.EditProfileActivity"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+</manifest>

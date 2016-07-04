@@ -1,0 +1,85 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.0'
+    }
+}
+apply plugin: 'com.android.application'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.firebase.samples.logindemo"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+    }
+
+    productFlavors {
+
+        // Build variant to include the Facebook Android SDk
+        // The Facebook Android SDK has a min SDK version of 15
+        facebook {
+            minSdkVersion 16
+        }
+
+        // Build variant to exclude the Facebook Android SDK
+        // Firebase Authentication has a min SDK version of 9
+        nofacebook {
+            minSdkVersion 9
+        }
+
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libraries')
+
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    // Firebase Authentication
+    compile 'com.google.firebase:firebase-auth:9.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    // Google Sign In SDK (only required for Google Sign In)
+    compile 'com.google.android.gms:play-services-auth:9.0.0'
+    compile 'io.github.yavski:fab-speed-dial:1.0.2'
+    // Facebook Android SDK (only required for Facebook Login)
+    // This is only compiled into the 'facebook' variant of this app. You can build
+    // a 'nofacebook' variant to test on devices with SDK < 15.
+    facebookCompile 'com.facebook.android:facebook-android-sdk:4.9.0'
+
+    compile 'com.google.firebase:firebase-database:9.0.0'
+    compile 'com.google.firebase:firebase-storage:9.0.0'
+    compile 'pub.devrel:easypermissions:0.1.5'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile project(':common')
+    compile project(':commonwidget')
+    compile project(':panowidget')
+
+}
+apply plugin: 'com.google.gms.google-services'

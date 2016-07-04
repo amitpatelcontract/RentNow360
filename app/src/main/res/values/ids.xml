@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Your Facebook App ID. See README.
+    -->
+    <!--  TODO(developer): REPLACE -->
+    <string name="facebook_app_id">934880989910875</string>
+
+    <!-- Your Twitter consumer key and secret from your app settings on https://apps.twitter.com/ -->
+    <!-- More details here: https://www.firebase.com/docs/android/guide/login/twitter.html -->
+    <string name="twitter_consumer_key">peNeyPKySgDbwf34nFf4VxT5L</string>
+    <string name="twitter_consumer_secret">ZEMRkTmvS0C2djMNC4tbMdkVmQpVyNv2MGfbluQ1o2sOTkW7yv</string>
+</resources>

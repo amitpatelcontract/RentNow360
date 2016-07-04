@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/profile_page_bar"
+
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+        android:id="@+id/profile_face"
+        android:layout_width="150dp"
+        android:layout_below="@+id/profile_page_bar"
+        android:layout_height="150dp"
+         android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+         />
+
+    <TextView
+        android:id="@+id/user_name_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_face"
+        android:layout_centerHorizontal="true"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <TableLayout
+        android:id="@+id/agentStatusTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_me"
+        android:layout_gravity="center|top"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:visibility="visible">
+
+        <TableRow
+            android:id="@+id/email_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14sp"
+            android:background="#e5e6e6"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/email_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Email:" />
+
+            <TextView
+                android:id="@+id/email_edit_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text=" " />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/gender_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14sp"
+            android:background="#e5e6e6"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/gender_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Gender:" />
+
+            <TextView
+                android:id="@+id/gender_edit_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text=" " />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/age_range_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14sp"
+            android:background="#e5e6e6"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/age_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Age:" />
+
+            <TextView
+                android:id="@+id/age_edit_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text=" " />
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/location_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14sp"
+            android:background="#e5e6e6"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/location_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="Location:" />
+
+            <TextView
+                android:id="@+id/location_edit_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.60"
+                android:text=" " />
+        </TableRow>
+        <TableRow
+            android:id="@+id/about_me_row"
+            android:layout_width="match_parent"
+            android:layout_marginTop="14sp"
+            android:background="#e5e6e6"
+            android:weightSum="1">
+
+
+            <TextView
+                android:id="@+id/about_me_row_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.40"
+                android:text="About Me" />
+
+            <TextView
+                android:id="@+id/about_me_edit_me"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.60"
+                android:text="  " />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Edit"
+        android:id="@+id/edit_profile"
+        android:layout_below="@+id/profile_page_bar"
+        android:layout_alignRight="@+id/agentStatusTable"
+        android:layout_alignEnd="@+id/agentStatusTable" />
+
+    <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_marginTop="30dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/agentStatusTable"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabGravity="fill"/>-->
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/viewpager"-->
+        <!--android:layout_below="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+</RelativeLayout>

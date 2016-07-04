@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativelayout_username"
+        android:layout_marginTop="38dp">
+
+        <TextView
+
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:text="@string/age" />
+
+        <EditText
+            android:id="@+id/age_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/age" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <TextView
+
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:text="@string/gender" />
+
+        <EditText
+            android:id="@+id/gender_edit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gender" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set User"
+        android:id="@+id/set_user"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="79dp" />
+
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/gender_selecter"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_below="@+id/relativelayout_username"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginLeft="200dp">-->
+
+
+    <!--<RadioGroup-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:id="@+id/gender_selector"-->
+
+    <!--android:checkedButton="@+id/sound" >-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/male_radio"-->
+    <!--android:text="@string/male" />-->
+
+    <!--<RadioButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:id="@+id/female_radio"-->
+    <!--android:text="@string/female" />-->
+
+
+    <!--</RadioGroup>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/gender_selecter">-->
+
+    <!--<NumberPicker-->
+    <!--android:id="@+id/numberPicker"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/age_cancle"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/numberPicker"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toRightOf="@+id/numberPicker"-->
+    <!--android:text="Cancel" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/age_ok"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBaseline="@+id/age_cancle"-->
+    <!--android:layout_alignBottom="@+id/age_cancle"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:layout_toLeftOf="@+id/numberPicker"-->
+    <!--android:text="OK" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/age"-->
+    <!--android:id="@+id/select_age"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignRight="@id/age_ok"-->
+    <!--android:layout_alignEnd="@id/age_ok" />-->
+
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+        <string-array name="major_categories">
+            <item>	Cell Phones / Tablets And Related	</item>
+            <item>	Computers/laptops And Accessories	</item>
+            <item>	Consumer Electronics	</item>
+            <item>	Home And Yard Appliances	</item>
+            <item>	Clothes/shoes And Accessories	</item>
+            <item>	Pet And Pet Accessories	</item>
+            <item>	Motors/vehicle And Parts	</item>
+            <item>	Furniture	</item>
+            <item>	Sports	</item>
+            <item>	Jewelry And Watches	</item>
+            <item>	Baby And Kid	</item>
+            <item>	Books	</item>
+            <item>	Video Games	</item>
+            <item>	Music Instruments	</item>
+            <item>	Collectibles	</item>
+            <item>	Antiques	</item>
+            <item>	Arts And Crafts	</item>
+            <item>	Cds, Dvds And Usb Data	</item>
+            <item>	Gifts, Cards &amp; Coupons	</item>
+            <item>	Health And Beauty.	</item>
+            <item>	Free	</item>
+        </string-array>
+      </resources>
