@@ -29,12 +29,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OneFragment extends Fragment {
-//    private List<UserModel> userList = new ArrayList<>();
-    private RecyclerView recyclerView;
+     private RecyclerView recyclerView;
     private UserRecycleAdapter mAdapter;
     private Context context;
     private DatabaseReference mDatabase;
-private String TAG = "OneFragment";
+    private String TAG = "OneFragment";
+
     public OneFragment() {
         // Required empty public constructor
     }
@@ -44,7 +44,9 @@ private String TAG = "OneFragment";
         super.onAttach(context);
         this.context = context;
     }
+
     final ArrayList<UserModel> userModels = new ArrayList<UserModel>();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,19 +57,12 @@ private String TAG = "OneFragment";
                              Bundle savedInstanceState) {
         mDatabase = FirebaseDatabase.getInstance().getReference();
 
-//        for (int i = 0; i < getAllUsers().size(); i++) {
-//            ArmsLogs.i(TAG, "getAllUsers: " + getAllUsers().get(i).getDisplayName());
-//            userList.add(getAllUsers().get(i));
-//        }
-
-
 
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.list_fragment, container, false);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view_main_fragment);
-//
-//
+
         mDatabase.child("user-profiles").addChildEventListener(
                 new ChildEventListener() {
 
@@ -87,7 +82,6 @@ private String TAG = "OneFragment";
                             ArmsLogs.i(TAG, "uModel sfsdvdsvsvs " + uModel.getDisplayName());
 
                         }
-
 
                         recyclerView.setAdapter(mAdapter);
                         mAdapter.notifyDataSetChanged();
@@ -117,19 +111,7 @@ private String TAG = "OneFragment";
 
                     }
                 });
-//double l1 = 00;
-//        double l2 = 01;
-//        userModels.add(new UserModel("adfa","dafa","afd","adf",l1,l2,"adf","adfad","adf"));
-//        userModels.add(new UserModel("adfa","fad","af","adf",l1,l2,"fa","adf","af"));
-////        ArmsLogs.i(TAG, "uModel sfsdvdsvsvs " + uModel.getDisplayName());
-//        mAdapter = new UserRecycleAdapter(userModels);
-//        recyclerView.setHasFixedSize(true);
-//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(context);
-//        recyclerView.setLayoutManager(mLayoutManager);
-//        recyclerView.addItemDecoration(new DividerItemDecoration(context, LinearLayoutManager.VERTICAL));
-//        recyclerView.setItemAnimator(new DefaultItemAnimator());
-//        recyclerView.setAdapter(mAdapter);
-//        mAdapter.notifyDataSetChanged();
+
         ArmsLogs.i(TAG, "User " + "here");
 
         mAdapter = new UserRecycleAdapter(userModels);
@@ -138,8 +120,7 @@ private String TAG = "OneFragment";
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(context, LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-//        recyclerView.setAdapter(mAdapter);
-//        mAdapter.notifyDataSetChanged();
+
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(context, recyclerView, new ListofProducts.ClickListener() {
             @Override
             public void onClick(View view, int position) {
@@ -189,5 +170,5 @@ private String TAG = "OneFragment";
                         Log.w(TAG, "getUser:onCancelled", databaseError.toException());
                     }
                 });*/
-    }
+}
 

@@ -65,21 +65,6 @@ public class ListofProducts extends BaseActivity
     private ViewPager viewPager;
     private UserModel allUsers;
     private static final String TAG = "ListofProducts";
-    private static final String TRANSLATION_Y = "translationY";
-
-    private ImageButton fab;
-
-    private boolean expanded = false;
-
-    private View fabAction1;
-    private View fabAction2;
-    private View fabAction3;
-
-    private float offset1;
-    private float offset2;
-    private float offset3;
-
-//    String[] arr_tabs = {"ONE","TWO","THREE","FOUR","FIVE","SIX","SEVEN","EIGHT","NINE","TEN"};
 
 
     @Override
@@ -111,11 +96,7 @@ public class ListofProducts extends BaseActivity
         View headerView = navigationView.inflateHeaderView(R.layout.nav_header_main);
         TextView tvName = (TextView) headerView.findViewById(R.id.nav_header_main_title);
         ImageView nav_header_main_user_icon = (ImageView) headerView.findViewById(R.id.nav_header_main_user_icon);
-//initialize image view
 
-
-//download and display image from url
-//        imageLoader.displayImage(HelpUtils.getuserDataFromSharedPreferance(ListofProducts.this).getProfileImageURL(), nav_header_main_user_icon, options);
         if (HelpUtils.getCurrentUser().getPhotoUrl() != null)
             Glide.with(this)
                     .load(HelpUtils.getCurrentUser().getPhotoUrl().toString())
@@ -126,7 +107,7 @@ public class ListofProducts extends BaseActivity
         headerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                 HelpUtils.getCurrentUserData(ListofProducts.this);
+
                 HelpUtils.openProfilePage(ListofProducts.this);
             }
         });
@@ -158,41 +139,21 @@ public class ListofProducts extends BaseActivity
         });
 
 
-
-
-
-
-//        Product poduct;
-////     public ListOfProductsAdapter(Class modelClass, int modelLayout, Class viewHolderClass, Query ref) {
-//        final ListOfProductsAdapter adapter = new ListOfProductsAdapter(poduct, );
-//        recyclerView.setAdapter(adapter);
-//
-//        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-//            @Override
-//            public int getSpanSize(int position) {
-//                return adapter.isHeader(position) ? manager.getSpanCount() : 1;
-//            }
-//        });
-
-
     }
-
-
-
 
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OneFragment(), "ONE");
         adapter.addFrag(new OneFragment(), "TWO");
-        adapter.addFrag(new OneFragment(), "THREE");
-        adapter.addFrag(new OneFragment(), "FOUR");
-        adapter.addFrag(new OneFragment(), "FIVE");
-        adapter.addFrag(new OneFragment(), "SIX");
-        adapter.addFrag(new OneFragment(), "SEVEN");
-        adapter.addFrag(new OneFragment(), "EIGHT");
-        adapter.addFrag(new OneFragment(), "NINE");
-        adapter.addFrag(new OneFragment(), "TEN");
+//        adapter.addFrag(new OneFragment(), "THREE");
+//        adapter.addFrag(new OneFragment(), "FOUR");
+//        adapter.addFrag(new OneFragment(), "FIVE");
+//        adapter.addFrag(new OneFragment(), "SIX");
+//        adapter.addFrag(new OneFragment(), "SEVEN");
+//        adapter.addFrag(new OneFragment(), "EIGHT");
+//        adapter.addFrag(new OneFragment(), "NINE");
+//        adapter.addFrag(new OneFragment(), "TEN");
         viewPager.setAdapter(adapter);
     }
 
@@ -290,3 +251,28 @@ public class ListofProducts extends BaseActivity
     }
 
 }
+
+//    private static final String TRANSLATION_Y = "translationY";
+//    private ImageButton fab;
+//
+//    private boolean expanded = false;
+//
+//    private View fabAction1;
+//    private View fabAction2;
+//    private View fabAction3;
+//
+//    private float offset1;
+//    private float offset2;
+//    private float offset3;
+
+//        Product poduct;
+////     public ListOfProductsAdapter(Class modelClass, int modelLayout, Class viewHolderClass, Query ref) {
+//        final ListOfProductsAdapter adapter = new ListOfProductsAdapter(poduct, );
+//        recyclerView.setAdapter(adapter);
+//
+//        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
+//            @Override
+//            public int getSpanSize(int position) {
+//                return adapter.isHeader(position) ? manager.getSpanCount() : 1;
+//            }
+//        });

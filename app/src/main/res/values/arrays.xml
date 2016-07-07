@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="sub_spinner">
-        <item>category1</item>
-        <item>category2</item>
-        <item>category3</item>
-        <item>category4</item>
-        <item>category5</item>
-        <item>category6</item>
-        <item>category7</item>
-        <item>category8</item>
-    </string-array>
-    <array name="main_spinner">
-        <item>Major One</item>
-        <item>Major Two</item>
-        <item>Major Three</item>
-    </array>
+    <!--<string-array name="sub_spinner">-->
+        <!--<item>category1</item>-->
+        <!--<item>category2</item>-->
+        <!--<item>category3</item>-->
+        <!--<item>category4</item>-->
+        <!--<item>category5</item>-->
+        <!--<item>category6</item>-->
+        <!--<item>category7</item>-->
+        <!--<item>category8</item>-->
+    <!--</string-array>-->
+    <!--<array name="main_spinner">-->
+        <!--<item>Major One</item>-->
+        <!--<item>Major Two</item>-->
+        <!--<item>Major Three</item>-->
+    <!--</array>-->
 </resources>
