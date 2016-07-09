@@ -10,130 +10,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e93226-4434-4ddf-8b2e-0707b9fc8d84" name="Default" comment="refactor&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/materialdatetimepicker_2_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_location_9_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_maps_9_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/HintAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/ConvertUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/extra_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values-v5/dimens.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/GoogleOAuthActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/TwitterOAuthActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/UploadAnItem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/FirebaseArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/FirebaseRecyclerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/ListOfProductsAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/UserAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/nShopConstants.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileFacebookDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/firebase_lockup_400.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/firebase_lockup_400.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_person_white.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_person_white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/camera.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/camera.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lips.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/lips.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" afterPath="$PROJECT_DIR$/build/generated/mockable-android-23.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/CreateProfile.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/CreateProfile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/EditProfileActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/EditProfileActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/ListofProducts.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/ListofProducts.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/ProfileActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/ProfileActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/UploadProfilePicturesActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/activities/UploadProfilePicturesActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/HeaderNumberedAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/HeaderNumberedAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/ProductPagerAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/ProductPagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/UserRecycleAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/adapters/UserRecycleAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/androidchat/IndividualChat.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/androidchat/IndividualChat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/androidchat/MaleUserList.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/androidchat/MaleUserList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/AnonymousAuthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/AnonymousAuthActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/ChooserActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/ChooserActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/CustomAuthActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/CustomAuthActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/EmailPasswordActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/EmailPasswordActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/FacebookLoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/FacebookLoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/GoogleSignInActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/GoogleSignInActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/TokenBroadcastReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/auth/TokenBroadcastReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/ArmsSpinner.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/ArmsSpinner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/DividerItemDecoration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/DividerItemDecoration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/MarginDecoration.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/MarginDecoration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/MyDownloadService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/MyDownloadService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/TextViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/extra/TextViewHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/firebasereferenceurls/FirebaseUrls.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/firebasereferenceurls/FirebaseUrls.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/firebasereferenceurls/NCHATIntents.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/firebasereferenceurls/NCHATIntents.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/fragments/MyProductTabs.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/fragments/MyProductTabs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/listener/RecyclerTouchListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/listener/RecyclerTouchListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/CashedUserHashMap.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/CashedUserHashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Chat.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Chat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/NLogs.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/NLogs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Product.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/User.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/UserModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/UserModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Users.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/models/Users.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/ArmsDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/ArmsDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/ArmsLogs.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/ArmsLogs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/Categories.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/Categories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/HelpUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/HelpUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/IntentConstant.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/IntentConstant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/LocationUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/LocationUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/UserManagement.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/samples/logindemo/utils/UserManagement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_camera.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_camera.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_gallery.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_gallery.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_manage.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_manage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_send.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_send.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_share.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_share.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_slideshow.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_menu_slideshow.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/edittext_rounded.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/edittext_rounded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout-land/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_anonymous_auth.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_anonymous_auth.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_chooser.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_chooser.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_custom.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_custom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_emailpassword.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_emailpassword.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_facebook.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_facebook.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_google.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_google.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/arms_dialog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/arms_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/create_profile.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/create_profile.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_tab.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_tab.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/edit_profile_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_profile_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_of_products.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_of_products.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/my_product_grid_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_product_grid_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/my_product_list_fragment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/my_product_list_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/profile_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/rowlayout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/rowlayout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/upload_profile_pic.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/upload_profile_pic.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/user_name_dialog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/user_name_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-v5/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-v5/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/categories.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/categories.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/ids.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/ids.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/tags.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/tags.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
-    </list>
+    <list default="true" id="c1e93226-4434-4ddf-8b2e-0707b9fc8d84" name="Default" comment="" />
     <ignored path="RentNow360.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -4874,7 +4751,13 @@
       <option name="project" value="LOCAL" />
       <updated>1467862986772</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="working copy of rentnow">
+      <created>1468101922902</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1468101922902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -4955,7 +4838,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding geofire basic gradle" />
     <MESSAGE value="refactor&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor&#10;" />
+    <MESSAGE value="working copy of rentnow" />
+    <option name="LAST_COMMIT_MESSAGE" value="working copy of rentnow" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

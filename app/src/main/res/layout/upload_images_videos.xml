@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Images:"
+        android:id="@+id/images_text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/images_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Video:"
+        android:id="@+id/video_text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/video_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="360 Images:"
+        android:id="@+id/threesixty_images_text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/threesixty_images_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="360 Videos:"
+        android:id="@+id/threesisty_video_text" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/threesixty_video_layout_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></LinearLayout>
+</LinearLayout>
