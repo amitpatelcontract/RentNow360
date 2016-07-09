@@ -4,10 +4,8 @@ package com.firebase.samples.logindemo.utils;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.preference.PreferenceManager;
 import android.util.Base64;
 
 import com.firebase.samples.logindemo.R;
@@ -15,12 +13,10 @@ import com.firebase.samples.logindemo.activities.CreateProfile;
 import com.firebase.samples.logindemo.activities.EditProfileActivity;
 import com.firebase.samples.logindemo.activities.ListofProducts;
 import com.firebase.samples.logindemo.activities.ProfileActivity;
- import com.firebase.samples.logindemo.activities.UploadProfilePicturesActivity;
-import com.firebase.samples.logindemo.models.User;
-import com.firebase.samples.logindemo.models.UserModel;
+import com.firebase.samples.logindemo.activities.UpLoadProperty;
+import com.firebase.samples.logindemo.activities.UploadProfilePicturesActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.gson.Gson;
 
 import java.io.ByteArrayOutputStream;
 
@@ -87,7 +83,7 @@ public class HelpUtils {
     }
     public static void openUploadItemActivity(Context context) {
 //        context.startActivity(new Intent(context, UploadProfilePicturesActivity.class));
-
+        context.startActivity(new Intent(context, UpLoadProperty.class));
     }
     public static void openCreateProfile(Activity activity) {
         activity.startActivity(new Intent(activity, CreateProfile.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));

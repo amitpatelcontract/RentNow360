@@ -99,3 +99,8 @@ FirebaseAuth.getInstance().getCurrentUser().unlink(providerId)
 
 
                        Requirements:
+
+
+
+businesspoints
+is it easy to find a renter for one room?

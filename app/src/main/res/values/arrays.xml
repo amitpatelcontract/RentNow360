@@ -15,4 +15,66 @@
         <!--<item>Major Two</item>-->
         <!--<item>Major Three</item>-->
     <!--</array>-->
+    <string-array name="lease_time" >
+        <item>1 Month</item>
+        <item>3 Months</item>
+        <item>6 Months</item>
+        <item>9 Months</item>
+        <item>11 Months</item>
+        <item>12 Months</item>
+        <item>18 Months</item>
+        <item>24 Months</item>
+        <item>36 Months</item>
+    </string-array>
+
+    <string-array name="gender_string_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Trans</item>
+    </string-array>
+    <string-array name="property_types_array">
+        <item>Apartment</item>
+        <item>Condo</item>
+        <item>Townhome</item>
+        <item>Single Family Home</item>
+        <item>Select Property Type</item>
+    </string-array>
+
+    <integer-array name="bed_rooms">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </integer-array>
+    <string-array name="bathrooms">
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="laundry_options">
+        <item>None</item>
+        <item>Laundry Facilities</item>
+        <item>Washer/Dryer</item>
+        <item>Washer/Dryer Hookup</item>
+    </string-array>
+    <string-array name="parking_options">
+        <item>None</item>
+        <item>Surface Lot</item>
+        <item>Covered</item>
+        <item>Street</item>
+        <item>Garage</item>
+        <item>Other</item>
+    </string-array>
 </resources>

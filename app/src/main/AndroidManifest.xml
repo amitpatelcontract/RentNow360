@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.firebase.samples.logindemo">
-    <uses-sdk tools:overrideLibrary="com.google.vr.widgets.common,com.google.vr.sdk.widgets.pano"/>
+
+    <uses-sdk tools:overrideLibrary="com.google.vr.widgets.common,com.google.vr.sdk.widgets.pano" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -49,12 +50,21 @@
         <activity android:name=".auth.GoogleSignInActivity"></activity>
         <activity android:name=".activities.CreateProfile"></activity>
         <activity android:name=".activities.EditProfileActivity"></activity>
-
+        <activity android:name=".activities.UpLoadProperty"></activity>
+        <activity android:name=".activities.UploadImagesandVideoActivity"></activity>
+<activity android:name=".activities.BasicInfoActivity"></activity>
+        <activity android:name=".activities.ExtraInfoActivity"></activity>
+        <activity android:name=".activities.ContactInfoActivity"></activity>
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCdGx3avgQW74yoosm-CvvGrU0W72jX6Cg"></meta-data>
+
+
     </application>
 </manifest>

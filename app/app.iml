@@ -43,6 +43,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/facebookDebug/jni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/facebookDebug/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/facebookDebug/shaders" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/facebook/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/facebook/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/facebook/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/facebook/debug" isTestSource="true" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/facebook/debug" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/facebook/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/assets" type="java-test-resource" />
@@ -51,12 +57,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/jni" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/testFacebookDebug/shaders" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/r/androidTest/facebook/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/aidl/androidTest/facebook/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/buildConfig/androidTest/facebook/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/source/rs/androidTest/facebook/debug" isTestSource="true" generated="true" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/rs/androidTest/facebook/debug" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/build/generated/res/resValues/androidTest/facebook/debug" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/facebook/res" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/facebook/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/facebook/assets" type="java-resource" />
@@ -105,14 +105,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/jni" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
@@ -121,6 +113,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/jni" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/jni" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/builds" />
@@ -141,6 +141,8 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars" />
@@ -154,6 +156,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.3.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/io.github.yavski/fab-speed-dial/1.0.2/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/pub.devrel/easypermissions/0.1.5/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/incremental" />
@@ -179,6 +182,7 @@
     <orderEntry type="library" exported="" name="gson-2.2.4" level="project" />
     <orderEntry type="library" exported="" name="easypermissions-0.1.5" level="project" />
     <orderEntry type="library" exported="" name="firebase-iid-9.0.0" level="project" />
+    <orderEntry type="library" exported="" name="materialdatetimepicker-2.3.0" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="geofire-1.1.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-base-9.0.0" level="project" />
@@ -197,11 +201,13 @@
     <orderEntry type="library" exported="" name="firebase-core-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-auth-base-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-9.0.0" level="project" />
+    <orderEntry type="library" exported="" name="play-services-maps-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-tasks-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-database-connection-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-auth-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="design-23.1.1" level="project" />
+    <orderEntry type="library" exported="" name="play-services-location-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="firebase-analytics-impl-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="fab-speed-dial-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="multidex-1.0.1" level="project" />

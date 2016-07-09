@@ -79,10 +79,33 @@
     <string name="rationale_storage">This sample reads images from your camera to demonstrate uploading.></string>
     <string name="you_have_been_loggedout">You have been logged out!</string>
     <string name="log_in_please">Please Login Again!</string>
-    <string-array name="gender_string_array">
-        <item>Male</item>
-        <item>Female</item>
-        <item>Trans</item>
-    </string-array>
+    <string name="property_type">Property Type</string>
+    <string name="upload_images_and_videos">Upload Images and Videos</string>
+    <string name="basic">Basic info</string>
+    <string name="extra">Extra Info</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="bed_room">Bed / Beds:</string>
+    <string name="bath">Bath:</string>
+    <string name="deposit">$ Deposit</string>
+    <string name="rentpermonth"> $ Rent / Month</string>
+    <string name="square_feet">Square Feet</string>
+    <string name="lease_time">Lease Time</string>
+    <string name="leasetime">Lease Time</string>
+    <string name="studio">Studio</string>
+    <string name="one">one</string>
+    <string name="publish_propety">Publish Property</string>
+    <string name="description">Description</string>
+    <string name="not_allowed">Sorry! \n Not Allowed</string>
+    <string name="dogs_allowed">Dogs \nAllowed</string>
+    <string name="cats_allowed">Cats \nAllowed</string>
+    <string name="furnished">Furnished</string>
+    <string name="wheelchair_access">Wheelchair \nAccess</string>
+    <string name="elevator">Elevator</string>
+    <string name="doorman">Doorman</string>
+    <string name="fitness_center_gym">Fitness Center /Gym</string>
+    <string name="swimming_pool">Swimming Pool</string>
+    <string name="laundry_type">Laundry Type</string>
+    <string name="parking_type">Parking Type</string>
+
 
 </resources>

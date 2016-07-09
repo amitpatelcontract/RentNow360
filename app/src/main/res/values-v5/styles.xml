@@ -11,4 +11,20 @@
                 <item name="android:scrollbars">vertical</item>
                 <item name="android:textSize">14sp</item>
         </style>
+
+        <style name="MyTheme" parent="@android:style/android:Theme.Material.Light.NoActionBar">
+                <item name="android:windowNoTitle">true</item>
+                <!--We will be using the toolbar so no need to show ActionBar-->
+                <item name="android:windowActionBar">false</item>
+                <!-- Set theme colors from http://www.google.com/design/spec/style/color.html#color-color-palette-->
+                <!--&lt;!&ndash; colorPrimary is used for the default action bar background &ndash;&gt;-->
+                <!--<item name="android:colorPrimary">#2196F3</item>-->
+                <!--&lt;!&ndash; colorPrimaryDark is used for the status bar &ndash;&gt;-->
+                <!--<item name="android:colorPrimaryDark">#1976D2</item>-->
+                <!--&lt;!&ndash; colorAccent is used as the default value for colorControlActivated-->
+                     <!--which is used to tint widgets &ndash;&gt;-->
+                <!--<item name="android:colorAccent">#FF4081</item>-->
+                <!-- You can also set colorControlNormal, colorControlActivated
+                   colorControlHighlight and colorSwitchThumbNormal. -->
+        </style>
 </resources>

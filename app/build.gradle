@@ -71,7 +71,7 @@ dependencies {
     // This is only compiled into the 'facebook' variant of this app. You can build
     // a 'nofacebook' variant to test on devices with SDK < 15.
     facebookCompile 'com.facebook.android:facebook-android-sdk:4.9.0'
-
+    compile 'com.google.android.gms:play-services-location:9.0.0'
     compile 'com.google.firebase:firebase-database:9.0.0'
     compile 'com.google.firebase:firebase-storage:9.0.0'
     compile 'pub.devrel:easypermissions:0.1.5'
@@ -81,5 +81,7 @@ dependencies {
     compile project(':commonwidget')
     compile project(':panowidget')
     compile 'com.firebase:geofire:1.1.+'
+    compile 'com.wdullaer:materialdatetimepicker:2.3.0'
+
 }
 apply plugin: 'com.google.gms.google-services'

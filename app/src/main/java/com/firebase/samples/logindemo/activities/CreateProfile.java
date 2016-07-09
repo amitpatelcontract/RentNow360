@@ -1,9 +1,5 @@
 package com.firebase.samples.logindemo.activities;
 
-import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -18,7 +14,6 @@ import com.bumptech.glide.Glide;
 import com.firebase.samples.logindemo.R;
 import com.firebase.samples.logindemo.extra.ArmsSpinner;
 import com.firebase.samples.logindemo.models.UserModel;
-import com.firebase.samples.logindemo.utils.ArmsLogs;
 import com.firebase.samples.logindemo.utils.HelpUtils;
 import com.firebase.samples.logindemo.utils.LocationUtils;
 import com.firebase.samples.logindemo.utils.UserManagement;
@@ -28,9 +23,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
-import java.io.InputStream;
-import java.util.ArrayList;
 
 /**
  * Created by arms on 5/24/16.
@@ -128,6 +120,7 @@ public class CreateProfile extends AppCompatActivity {
                                 photoUrl = uModel.getProfileImageURL().toString();
                             else
                                 photoUrl = "";
+                            if (!isDestroyed())
                             Glide.with(CreateProfile.this)
                                     .load(photoUrl)
                                     .into(profile_face);

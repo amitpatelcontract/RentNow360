@@ -7,4 +7,9 @@
 
     <color name="grey_100">#F5F5F5</color>
     <color name="grey_300">#E0E0E0</color>
+
+
+    <color name="mdtp_accent_color">#009688</color>
+    <color name="mdtp_accent_color_dark">#00796b</color>
+    <color name="light_blue">#81BEF7</color>
 </resources>
