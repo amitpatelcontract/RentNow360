@@ -11,7 +11,7 @@ import android.util.Base64;
 import com.firebase.samples.logindemo.R;
 import com.firebase.samples.logindemo.activities.CreateProfile;
 import com.firebase.samples.logindemo.activities.EditProfileActivity;
-import com.firebase.samples.logindemo.activities.ListofProducts;
+import com.firebase.samples.logindemo.activities.PropertyActivity;
 import com.firebase.samples.logindemo.activities.ProfileActivity;
 import com.firebase.samples.logindemo.activities.UpLoadProperty;
 import com.firebase.samples.logindemo.activities.UploadProfilePicturesActivity;
@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.io.ByteArrayOutputStream;
 
-//import com.firebase.samples.logindemo.activities.ListofProducts;
+//import com.firebase.samples.logindemo.activities.PropertyActivity;
 
 //import com.firebase.samples.logindemo.activities.ProfileActivity;
 
@@ -79,10 +79,11 @@ public class HelpUtils {
         context.startActivity(new Intent(context, EditProfileActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
     }
     public static void OpenListOfProducts(Context context) {
-        context.startActivity(new Intent(context, ListofProducts.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
+        context.startActivity(new Intent(context, PropertyActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP).setFlags(Intent.FLAG_ACTIVITY_NEW_TASK).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
     }
     public static void openUploadItemActivity(Context context) {
 //        context.startActivity(new Intent(context, UploadProfilePicturesActivity.class));
+        SaveObjects.clearAllPreviousPropertyData(context);
         context.startActivity(new Intent(context, UpLoadProperty.class));
     }
     public static void openCreateProfile(Activity activity) {

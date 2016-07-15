@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <android.support.v7.widget.Toolbar
@@ -11,6 +11,15 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/save"
+            />
 
     </android.support.v7.widget.Toolbar>
 
@@ -20,6 +29,7 @@
         android:layout_below="@+id/bed_room_spinner"
         android:layout_toEndOf="@+id/textView"
         android:layout_toRightOf="@+id/textView"
+        android:layout_weight="0.11"
         android:orientation="horizontal">
 
         <TextView
@@ -27,19 +37,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.5"
-            android:paddingLeft="30dp"
+            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+
+            android:layout_weight="0.3"
             android:text="@string/bed_room"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+            android:textSize="@dimen/spinner_title_size"
+            android:textStyle="bold" />
 
         <Spinner
             android:id="@+id/bed_room_spinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:prompt="@string/studio"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spinner_margin_left"
             android:layout_toRightOf="@+id/textView"
-            android:layout_weight="0.5"
+            android:layout_weight="0.7"
+            android:prompt="@string/studio"
+
             />
 
 
@@ -51,6 +65,7 @@
         android:layout_below="@+id/bath_spinner"
         android:layout_toEndOf="@+id/textView"
         android:layout_toRightOf="@+id/textView"
+        android:layout_weight="0.11"
         android:orientation="horizontal">
 
         <TextView
@@ -58,21 +73,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.5"
-            android:paddingLeft="30dp"
+            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+            android:textSize="@dimen/spinner_title_size"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
             android:text="@string/bath"
-            android:textAppearance="?android:attr/textAppearanceSmall" />
+             />
 
         <Spinner
             android:id="@+id/bath_spinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:prompt="@string/one"
-
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/spinner_margin_left"
             android:layout_toRightOf="@+id/textView"
-            android:layout_weight="0.5"
-            />
+            android:layout_weight="0.7"
+            android:prompt="@string/one" />
 
 
     </LinearLayout>
@@ -80,65 +96,210 @@
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_square_feet"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:theme="@style/armsCheckBox"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11">
 
         <EditText
-            android:id="@+id/square_feet_text"
+            android:id="@+id/square_feet_edit"
             android:layout_width="match_parent"
-            android:inputType="number"
-            android:singleLine="true"
             android:layout_height="wrap_content"
-            android:hint="@string/square_feet" />
+            android:hint="@string/square_feet"
+            android:layout_marginLeft="@dimen/spinner_margin_left"
+            android:inputType="number"
+            android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_rent_per_month"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/armsCheckBox"
+        android:layout_weight="0.11">
 
         <EditText
             android:id="@+id/rent_per_month"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+            android:hint="@string/rentpermonth"
             android:inputType="number"
-            android:singleLine="true"
-            android:hint="@string/rentpermonth" />
+            android:layout_marginLeft="@dimen/spinner_margin_left"
+            android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/input_deposite"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:theme="@style/armsCheckBox"
+        android:layout_weight="0.11">
 
         <EditText
             android:id="@+id/deposite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="@string/deposit"
             android:inputType="number"
-            android:singleLine="true"
-            android:hint="@string/deposit" />
+
+            android:layout_marginLeft="@dimen/spinner_margin_left"
+            android:singleLine="true" />
 
     </android.support.design.widget.TextInputLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Lease time:"
-        android:id="@+id/lease_time_text" />
-
-    <com.firebase.samples.logindemo.extra.MultiSelectionSpinner
-        android:id="@+id/lease_multipal_selector"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:prompt="@string/leasetime"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Available Date"
-        android:id="@+id/selectAvailableDateButton"
-        android:layout_gravity="center_horizontal" />
+        android:layout_weight="0.11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lease_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+            android:text="Lease time:"
+            android:textSize="@dimen/spinner_title_size"
+            android:textStyle="bold" />
+
+        <com.firebase.samples.logindemo.extra.MultiSelectionSpinner
+            android:id="@+id/lease_multipal_selector"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lease_time_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/spinner_margin_left"
+            />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+    android:orientation="horizontal"
+        android:weightSum="1"
+        android:id="@+id/fee_no_fee"
+     >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/fees"
+            android:id="@+id/radioFee"
+            android:theme="@style/armsCheckBox"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/spinner_title_size" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no_fees"
+            android:id="@+id/radioNoFee"
+            android:theme="@style/armsCheckBox"
+            android:layout_gravity="center_vertical"
+            android:checked="true"
+            android:textSize="@dimen/spinner_title_size"
+            android:layout_weight="0.5" />
+    </RadioGroup></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:id="@+id/broker_owner_roommate"
+            >
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/owner"
+                android:id="@+id/radioOwner"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/armsCheckBox"
+                android:checked="true"
+                android:layout_weight="0.33"
+                android:textSize="@dimen/spinner_title_size" />
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/roommate"
+                android:id="@+id/radioRoommate"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/armsCheckBox"
+                android:checked="false"
+                android:textSize="@dimen/spinner_title_size"
+                android:layout_weight="0.33" />
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/broker"
+                android:id="@+id/radioBroker"
+                android:layout_gravity="center_vertical"
+                android:theme="@style/armsCheckBox"
+                android:checked="false"
+                android:textSize="@dimen/spinner_title_size"
+                android:layout_weight="0.33" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_weight="0.11"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/available_date"
+        android:layout_weight="0.8"
+            android:layout_marginBottom="10dp"
+         android:layout_gravity="center_horizontal|bottom"
+            android:id="@+id/selectAvailableDate"
+            />
+
+        <ImageView
+            android:id="@+id/selectAvailableDateImageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center_vertical"
+            android:src="@drawable/calendar" />
+
+
+    </LinearLayout>
+
+
 </LinearLayout>

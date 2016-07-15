@@ -10,7 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay">
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:textStyle="bold"
+            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:id="@+id/save"
+            />
 
     </android.support.v7.widget.Toolbar>
 
@@ -24,6 +33,7 @@
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_square_feet"
             android:layout_width="match_parent"
+            android:theme="@style/armsCheckBox"
             android:layout_height="match_parent">
 
             <EditText
@@ -41,8 +51,10 @@
         android:id="@+id/pet_rules_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pet Rules"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:text="@string/pet_rules"
+        android:layout_marginLeft="@dimen/spinner_margin_left_title"
+        android:textSize="@dimen/spinner_title_size"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:id="@+id/pet_rules_layout"
@@ -59,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.33"
-            android:checked="false"
+            android:checked="true"
             android:text="@string/not_allowed"
             android:theme="@style/armsCheckBox" />
 
@@ -91,8 +103,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Luxuries"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:text="@string/luxuries"
+        android:layout_marginLeft="@dimen/spinner_margin_left_title"
+        android:textSize="@dimen/spinner_title_size"
+        android:textStyle="bold"
+         />
 
     <LinearLayout
         android:id="@+id/amenities_layout"
@@ -110,7 +125,7 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/furnished"
+                android:id="@+id/furnished_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -121,7 +136,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/elevator"
+                android:id="@+id/elevator_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -132,7 +147,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/doorman"
+                android:id="@+id/doorman_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -152,7 +167,7 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/wheelchair_ccess"
+                android:id="@+id/wheelchair_access_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -163,7 +178,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/fitness_center_gym"
+                android:id="@+id/fitness_center_gym_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -174,7 +189,7 @@
                 />
 
             <CheckBox
-                android:id="@+id/swimming_pool"
+                android:id="@+id/swimming_pool_checkBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -201,15 +216,18 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:textStyle="bold"
             android:layout_weight="0.3"
             android:text="@string/laundry_type"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+            android:textSize="@dimen/spinner_title_size"
+             />
 
         <Spinner
             android:id="@+id/laundry_spinner"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/keyline_1_minus_8dp"
+            android:layout_marginLeft="@dimen/spinner_margin_left"
             android:layout_gravity="center_vertical"
             android:layout_weight="0.7" />
     </LinearLayout>
@@ -228,9 +246,10 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="0.3"
             android:textStyle="bold"
-            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+            android:textSize="@dimen/spinner_title_size"
             android:text="@string/parking_type"
-            android:textSize="@dimen/spinner_title_size" />
+            android:layout_marginLeft="@dimen/spinner_margin_left_title"
+            />
 
         <Spinner
             android:id="@+id/parking_spinner"

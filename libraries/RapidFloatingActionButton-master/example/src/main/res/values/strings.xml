@@ -2,7 +2,7 @@
     <string name="app_name">RapidFloatingActionButton</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <!--<string name="action_settings">Settings</string>-->
 
     <!-- 用于通过唯一的identificationCode获取 -->
     <string name="rfab_identification_code_fragment_a">RFAB_IDENTIFICATION_CODE_FRAGMENT_A</string>

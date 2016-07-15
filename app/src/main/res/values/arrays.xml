@@ -16,6 +16,7 @@
         <!--<item>Major Three</item>-->
     <!--</array>-->
     <string-array name="lease_time" >
+        <item>Any</item>
         <item>1 Month</item>
         <item>3 Months</item>
         <item>6 Months</item>
@@ -33,6 +34,7 @@
         <item>Trans</item>
     </string-array>
     <string-array name="property_types_array">
+        <item>Renting Single Room Only</item>
         <item>Apartment</item>
         <item>Condo</item>
         <item>Townhome</item>

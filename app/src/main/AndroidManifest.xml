@@ -42,7 +42,7 @@
         <activity android:name="com.facebook.FacebookActivity" />
         <!--<activity android:name=".activities.TwitterOAuthActivity"></activity>-->
         <!--<activity android:name=".androidchat.IndividualChat"></activity>-->
-        <activity android:name=".activities.ListofProducts"></activity>
+        <activity android:name=".activities.PropertyActivity"></activity>
         <activity android:name=".activities.ProfileActivity"></activity>
         <activity android:name=".auth.AnonymousAuthActivity"></activity>
         <activity android:name=".auth.EmailPasswordActivity"></activity>
