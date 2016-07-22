@@ -1,17 +1,8 @@
 package com.firebase.samples.logindemo.utils;
 
 import android.app.Activity;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.view.ContextThemeWrapper;
-import android.view.View;
-import android.view.Window;
-import android.widget.Button;
-
-import com.firebase.samples.logindemo.R;
 
 /**
  * Created by arms on 5/28/16.

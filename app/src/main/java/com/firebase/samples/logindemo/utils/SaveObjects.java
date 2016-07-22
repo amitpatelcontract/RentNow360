@@ -4,13 +4,13 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.firebase.samples.logindemo.RentNowApplication;
 import com.firebase.samples.logindemo.models.BasicInfo;
 import com.firebase.samples.logindemo.models.ContactInfo;
 import com.firebase.samples.logindemo.models.ExtraInfo;
 import com.google.gson.Gson;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 /**
  * Created by arms on 7/10/16.
@@ -20,6 +20,8 @@ public class SaveObjects {
     public static String basicInfo_sharedpref_key = "basicInfo";
     public static String extraInfo_sharedpref_key = "extraInfo";
     public static String contactInfo_sharedpref_key = "contactInfo";
+
+    public static String appData_sharedpref_key = "appData";
 
     public static void saveObjectInSharedPreferance(Serializable objects, Context context, String key) {
         SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -74,4 +76,16 @@ public class SaveObjects {
         SaveObjects.clearObjectInSharedPreferance(BasicInfo.class, context, SaveObjects.extraInfo_sharedpref_key);
         SaveObjects.clearObjectInSharedPreferance(BasicInfo.class, context, SaveObjects.contactInfo_sharedpref_key);
     }
+
+    // basic Info
+    public static RentNowApplication.AppData getAppDataDataFromSharedPreferance(Context context, String key) {
+        SharedPreferences mPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+        Gson gson = new Gson();
+        String json = mPrefs.getString(key, "");
+        RentNowApplication.AppData appData = gson.fromJson(json, RentNowApplication.AppData.class);
+        return appData;
+    }
+
+
+
 }

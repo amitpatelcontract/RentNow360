@@ -1,5 +1,7 @@
 package com.firebase.samples.logindemo.activities;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -7,34 +9,44 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
-
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.firebase.samples.logindemo.R;
-
 import com.firebase.samples.logindemo.auth.BaseActivity;
-//import com.firebase.samples.logindemo.maplist.OneFragment;
+import com.firebase.samples.logindemo.listener.UpdateFragmentData;
 import com.firebase.samples.logindemo.maplist.SFVehiclesFragment;
 import com.firebase.samples.logindemo.maplist.SFVehiclesListFragment;
+import com.firebase.samples.logindemo.models.Filters;
 import com.firebase.samples.logindemo.models.UserModel;
+import com.firebase.samples.logindemo.utils.ArmsLogs;
 import com.firebase.samples.logindemo.utils.HelpUtils;
+import com.firebase.samples.logindemo.utils.LocationUtils;
 import com.firebase.samples.logindemo.utils.UserManagement;
-
+import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
+import com.google.android.gms.common.GooglePlayServicesRepairableException;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.location.places.Place;
+import com.google.android.gms.location.places.ui.PlaceAutocomplete;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+//import com.firebase.samples.logindemo.maplist.OneFragment;
 
 //import com.firebase.samples.logindemo.adapters.ListOfProductsAdapter;
 //import com.nostra13.universalimageloader.core.DisplayImageOptions;
@@ -44,13 +56,21 @@ import java.util.List;
  * Created by apatel on 2/11/16.
  */
 public class PropertyActivity extends BaseActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, UpdateFragmentData {
+    private static final int PLACE_AUTOCOMPLETE_REQUEST_CODE = 1;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private UserModel allUsers;
-    private static final String TAG = "PropertyActivity";
+    private static final String TAG = "SFVehicles PropertyActivity";
     private ActionBarDrawerToggle toggle;
     private Button filter, search;
+    private Filters filters;
+
+    public void setLocation(double[] location) {
+        this.location = location;
+    }
+
+    private double[] location;
 
 
     @Override
@@ -61,8 +81,11 @@ public class PropertyActivity extends BaseActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
+        location = LocationUtils.getLocationManager(getApplicationContext()).loc;
+//        location[0] =  37.7789 ;
+//        location[1] =  -122.4017;
+        ArmsLogs.i(TAG, "onCreate: " + "location0: " + String.valueOf(location[0]));
+//        setLocation(location);
         filter = (Button) findViewById(R.id.filter_button);
         search = (Button) findViewById(R.id.filter_location_search);
 
@@ -109,19 +132,59 @@ public class PropertyActivity extends BaseActivity
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
+
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
 
     }
 
+    ViewPagerAdapter adapter;
 
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SFVehiclesFragment(), getResources().getString(R.string.map));
-        adapter.addFragment(new SFVehiclesListFragment(), getResources().getString(R.string.list));
+    private void setupViewPager(final ViewPager viewPager) {
+        ArmsLogs.i(TAG, "setupViewPager");
+        adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        Bundle bundle = new Bundle();
+//        bundle.putSerializable("filter", filters);
+        bundle.putDoubleArray("location", location);
+        SFVehiclesFragment mapFragment = new SFVehiclesFragment();// .setArguments(bundle);
+        SFVehiclesListFragment listFragment = new SFVehiclesListFragment();
+        mapFragment.setArguments(bundle);
+        listFragment.setArguments(bundle);
+        adapter.addFragment(mapFragment, getResources().getString(R.string.map));
+        adapter.addFragment(listFragment, getResources().getString(R.string.list));
+
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+//                adapter.notifyDataSetChanged(); //this line will force all pages to be loaded fresh when changing between fragments
+                ArmsLogs.i(TAG, "onPageScrolled");
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                ArmsLogs.i(TAG, "onPageSelected");
+                Fragment fragment = ((ViewPagerAdapter) viewPager.getAdapter()).getMapFrag(position);
+                if (position == 1 && fragment != null) {
+                    fragment.onResume();
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+                ArmsLogs.i(TAG, "onPageScrollStateChanged");
+
+
+            }
+        });
+
 
         viewPager.setAdapter(adapter);
+    }
+
+    public double[] getLocation() {
+
+        return location;
     }
 
     @Override
@@ -133,7 +196,16 @@ public class PropertyActivity extends BaseActivity
                 break;
 
             case R.id.filter_location_search:
-                // do your code
+                try {
+                    Intent intent =
+                            new PlaceAutocomplete.IntentBuilder(PlaceAutocomplete.MODE_FULLSCREEN)
+                                    .build(this);
+                    startActivityForResult(intent, PLACE_AUTOCOMPLETE_REQUEST_CODE);
+                } catch (GooglePlayServicesRepairableException e) {
+                    // TODO: Handle the error.
+                } catch (GooglePlayServicesNotAvailableException e) {
+                    // TODO: Handle the error.
+                }
                 break;
 
 
@@ -142,12 +214,30 @@ public class PropertyActivity extends BaseActivity
         }
     }
 
-    class ViewPagerAdapter extends FragmentPagerAdapter {
+    @Override
+    public void updateLocation(double[] location, Activity activity) {
+        SFVehiclesListFragment sfVehiclesListFragment = new SFVehiclesListFragment();
+        sfVehiclesListFragment.updateLocation(location, PropertyActivity.this);
+    }
+
+
+    class ViewPagerAdapter extends FragmentStatePagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
+        private Map mapFrag = new HashMap<Integer, String>();
+        private FragmentManager fragmentManager;
 
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);
+            mapFrag = new HashMap<Integer, String>();
+        }
+
+
+        public Fragment getMapFrag(int position) {
+            String tag = (String) mapFrag.get(position);
+            if (tag == null)
+                return null;
+            return fragmentManager.findFragmentByTag(tag);
         }
 
         @Override
@@ -163,6 +253,24 @@ public class PropertyActivity extends BaseActivity
         public void addFragment(Fragment fragment, String title) {
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
+            ArmsLogs.i(TAG, "addFragment");
+        }
+
+        public void removeFragment(Fragment fragment, String title) {
+            mFragmentList.remove(fragment);
+
+            ArmsLogs.i(TAG, "addFragment");
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            Object obj = super.instantiateItem(container, position);
+            if (obj instanceof Fragment) {
+                Fragment f = (Fragment) obj;
+                String tag = f.getTag();
+                mapFrag.put(position, tag);
+            }
+            return obj;
         }
 
         @Override
@@ -191,15 +299,6 @@ public class PropertyActivity extends BaseActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
-//        }
 
         return super.onOptionsItemSelected(item);
     }
@@ -230,35 +329,24 @@ public class PropertyActivity extends BaseActivity
         return true;
     }
 
-//    public interface ClickListener {
-//        void onClick(View view, int position);
-//
-//        void onLongClick(View view, int position);
-//    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == PLACE_AUTOCOMPLETE_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                Place place = PlaceAutocomplete.getPlace(this, data);
+                location[0] = place.getLatLng().latitude;
+                location[1] = place.getLatLng().longitude;
+                ArmsLogs.i(TAG, "Place: " + place.getName());
+                setLocation(location);
+//                adapter.   notifyDataSetChanged();
+            } else if (resultCode == PlaceAutocomplete.RESULT_ERROR) {
+                Status status = PlaceAutocomplete.getStatus(this, data);
+                // TODO: Handle the error.
+                ArmsLogs.i(TAG, status.getStatusMessage());
 
+            } else if (resultCode == RESULT_CANCELED) {
+                // The user canceled the operation.
+            }
+        }
+    }
 }
-
-//    private static final String TRANSLATION_Y = "translationY";
-//    private ImageButton fab;
-//
-//    private boolean expanded = false;
-//
-//    private View fabAction1;
-//    private View fabAction2;
-//    private View fabAction3;
-//
-//    private float offset1;
-//    private float offset2;
-//    private float offset3;
-
-//        Product poduct;
-////     public ListOfProductsAdapter(Class modelClass, int modelLayout, Class viewHolderClass, Query ref) {
-//        final ListOfProductsAdapter adapter = new ListOfProductsAdapter(poduct, );
-//        recyclerView.setAdapter(adapter);
-//
-//        manager.setSpanSizeLookup(new GridLayoutManager.SpanSizeLookup() {
-//            @Override
-//            public int getSpanSize(int position) {
-//                return adapter.isHeader(position) ? manager.getSpanCount() : 1;
-//            }
-//        });

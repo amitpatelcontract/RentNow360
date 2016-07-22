@@ -1,15 +1,12 @@
 package com.firebase.samples.logindemo.activities;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
@@ -18,7 +15,6 @@ import android.widget.Toast;
 
 import com.firebase.samples.logindemo.R;
 import com.firebase.samples.logindemo.adapters.HintAdapter;
-import com.firebase.samples.logindemo.models.BasicInfo;
 import com.firebase.samples.logindemo.utils.ArmsLogs;
 import com.firebase.samples.logindemo.utils.SaveObjects;
 import com.google.android.gms.common.api.Status;
@@ -26,8 +22,6 @@ import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlaceAutocompleteFragment;
 import com.google.android.gms.location.places.ui.PlaceSelectionListener;
 import com.google.android.gms.maps.model.LatLng;
-
-import java.util.Locale;
 
 /**
  * Created by apatel on 7/7/16.
@@ -173,7 +167,7 @@ public class UpLoadProperty extends ProductParentActivity implements AdapterView
 //
 //        }
         else   {
-            location[0] = placeProperty.getLatLng().longitude;
+            location[0] = placeProperty.getLatLng().latitude;
             location[1] = placeProperty.getLatLng().longitude;
             properyType = propertTypeSpinner.getSelectedItem().toString();
 

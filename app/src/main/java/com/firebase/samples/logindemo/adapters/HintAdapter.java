@@ -3,9 +3,7 @@ package com.firebase.samples.logindemo.adapters;
 import android.content.Context;
 import android.widget.ArrayAdapter;
 
-
 import java.util.List;
-import java.util.Objects;
 
 /**
  * Created by arms on 7/8/16.

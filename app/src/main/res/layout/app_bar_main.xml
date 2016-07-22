@@ -29,6 +29,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="right"
                 android:id="@+id/filter_location_search"
+                android:onClick="onClick"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/search_icon" />
@@ -37,7 +38,7 @@
                 android:layout_height="40dp"
                 android:id="@+id/filter_button"
                 android:layout_gravity="right"
-
+                android:onClick="onClick"
                 android:background="@drawable/filter_icon" />
 
 

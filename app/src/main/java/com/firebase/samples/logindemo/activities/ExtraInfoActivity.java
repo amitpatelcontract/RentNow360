@@ -9,13 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.firebase.samples.logindemo.R;
 import com.firebase.samples.logindemo.utils.ArmsLogs;
-import com.firebase.samples.logindemo.utils.ConvertUtils;
 import com.firebase.samples.logindemo.utils.SaveObjects;
 
 /**

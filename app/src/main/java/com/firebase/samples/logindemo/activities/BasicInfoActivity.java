@@ -1,10 +1,6 @@
 package com.firebase.samples.logindemo.activities;
 
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,7 +15,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.firebase.samples.logindemo.R;
-import com.firebase.samples.logindemo.auth.BaseActivity;
 import com.firebase.samples.logindemo.extra.MultiSelectionSpinner;
 import com.firebase.samples.logindemo.utils.ArmsLogs;
 import com.firebase.samples.logindemo.utils.ConvertUtils;
@@ -28,7 +23,6 @@ import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 /**

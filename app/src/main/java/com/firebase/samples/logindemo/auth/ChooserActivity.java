@@ -16,7 +16,6 @@
 
 package com.firebase.samples.logindemo.auth;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -24,9 +23,6 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -39,17 +35,14 @@ import android.widget.Toast;
 
 import com.firebase.samples.logindemo.R;
 import com.firebase.samples.logindemo.utils.HelpUtils;
+import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
+import com.google.vr.sdk.widgets.pano.VrPanoramaView;
+import com.google.vr.sdk.widgets.pano.VrPanoramaView.Options;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import com.firebase.samples.logindemo.utils.UserManagement;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.vr.sdk.widgets.pano.VrPanoramaEventListener;
-import com.google.vr.sdk.widgets.pano.VrPanoramaView;
-import com.google.vr.sdk.widgets.pano.VrPanoramaView.Options;
 /**
  * Simple list-based Activity to redirect to one of the other Activities. This Activity does not
  * contain any useful code related to Firebase Authentication. You may want to start with

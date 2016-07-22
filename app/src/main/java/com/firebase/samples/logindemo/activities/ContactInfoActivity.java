@@ -11,8 +11,6 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.firebase.samples.logindemo.R;
-import com.firebase.samples.logindemo.models.ContactInfo;
-import com.firebase.samples.logindemo.models.ExtraInfo;
 import com.firebase.samples.logindemo.utils.ArmsLogs;
 import com.firebase.samples.logindemo.utils.EmailPhoneUtils;
 import com.firebase.samples.logindemo.utils.SaveObjects;

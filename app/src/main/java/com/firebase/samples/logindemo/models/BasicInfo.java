@@ -2,7 +2,6 @@ package com.firebase.samples.logindemo.models;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by arms on 7/10/16.
