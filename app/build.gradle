@@ -10,6 +10,16 @@ apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
+    // for downloading polypicker dependency cwac-camera
+    maven {
+        url "https://repo.commonsware.com.s3.amazonaws.com"
+    }
+
+    // for downloading poly-picker now we are using jitpack.
+    // Goodbye Maven Central
+    maven {
+        url "https://jitpack.io"
+    }
 }
 
 android {
@@ -18,7 +28,7 @@ android {
 
     defaultConfig {
         applicationId "com.firebase.samples.logindemo"
-        minSdkVersion 16
+        minSdkVersion 23
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -43,13 +53,13 @@ android {
         // Build variant to include the Facebook Android SDk
         // The Facebook Android SDK has a min SDK version of 15
         facebook {
-            minSdkVersion 16
+            minSdkVersion 23
         }
 
         // Build variant to exclude the Facebook Android SDK
         // Firebase Authentication has a min SDK version of 9
         nofacebook {
-            minSdkVersion 9
+            minSdkVersion 23
         }
 
     }
@@ -83,6 +93,9 @@ dependencies {
     compile project(':panowidget')
     compile 'com.firebase:geofire:1.1.+'
     compile 'com.wdullaer:materialdatetimepicker:2.3.0'
-
+    // when publishing, the demo app should always use the local modules
+    // instead of compiled dependencies.
+    compile project (':pp')
+    compile project (':camera')
 }
 apply plugin: 'com.google.gms.google-services'

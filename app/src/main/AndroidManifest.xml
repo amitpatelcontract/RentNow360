@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.firebase.samples.logindemo">
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-sdk tools:overrideLibrary="com.google.vr.widgets.common,com.google.vr.sdk.widgets.pano" />
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -55,6 +59,8 @@
 <activity android:name=".activities.BasicInfoActivity"></activity>
         <activity android:name=".activities.ExtraInfoActivity"></activity>
         <activity android:name=".activities.ContactInfoActivity"></activity>
+        <activity
+            android:name="nl.changer.polypicker.ImagePickerActivity" />
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />

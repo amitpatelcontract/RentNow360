@@ -1,79 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        app:popupTheme="@style/AppTheme.PopupOverlay" >
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_gravity="right"
-            android:textStyle="bold"
-            android:background="?attr/colorPrimary"
-            android:layout_height="wrap_content"
-            android:text="@string/save"
             android:id="@+id/save"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="?attr/colorPrimary"
+            android:text="@string/save"
+            android:textStyle="bold" />
 
     </android.support.v7.widget.Toolbar>
 
     <TextView
+        android:id="@+id/images_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Images:"
-        android:id="@+id/images_text" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:id="@+id/images_layout"
         android:layout_width="match_parent"
-        android:layout_height="100dp"></LinearLayout>
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+
+        <HorizontalScrollView
+            android:id="@+id/hori_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false"
+            android:foregroundGravity="left"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp">
+
+            <LinearLayout
+                android:id="@+id/selected_photos_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Medium Text"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+                <!-- images will be added dynamicall to this layout -->
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
 
     <TextView
+        android:id="@+id/video_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Video:"
-        android:id="@+id/video_text" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:id="@+id/video_layout"
-
         android:layout_width="match_parent"
-        android:layout_height="100dp"></LinearLayout>
+
+        android:layout_height="100dp"
+        android:orientation="horizontal"></LinearLayout>
 
     <TextView
+        android:id="@+id/threesixty_images_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="360 Images:"
-        android:id="@+id/threesixty_images_text" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:id="@+id/threesixty_images_layout"
-
         android:layout_width="match_parent"
-        android:layout_height="100dp"></LinearLayout>
+
+        android:layout_height="100dp"
+        android:orientation="horizontal"></LinearLayout>
 
     <TextView
+        android:id="@+id/threesisty_video_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="360 Videos:"
-        android:id="@+id/threesisty_video_text" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <LinearLayout
-        android:orientation="horizontal"
         android:id="@+id/threesixty_video_layout_layout"
-
         android:layout_width="match_parent"
-        android:layout_height="100dp"></LinearLayout>
+
+        android:layout_height="100dp"
+        android:orientation="horizontal"></LinearLayout>
 </LinearLayout>

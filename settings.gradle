@@ -1,2 +1,2 @@
-include ':app', ':common', ':commonwidget', ':panowidget'
+include ':app', ':common', ':commonwidget', ':panowidget', ':pp', ':camera'
 

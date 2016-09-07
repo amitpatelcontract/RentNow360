@@ -1,2 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/jackson-databind-2.2.2_879c5277a70295f8b228a078fb41bab4b5847139.jar" />
+    </item>
+    <item
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/gson-2.2.4_d0ce76b63ce905fbab3c5d385c8e1b8692010f19.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.10/ddce2c65136c1de8000f8932d8b7ab16d5d336b9/tubesock-0.0.10.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddce2c65136c1de8000f8932d8b7ab16d5d336b9">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/tubesock-0.0.10_5ba9842a9181e271fd37241e0316e699c9aa2533.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-iid-9.0.0_fedea58812b0f466da8f1de9f6f7e246d887bfed.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.9.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c9b831cf63629b8b3873959e52515340484a880">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.facebook.android-facebook-android-sdk-4.9.0_15e98dae7776d553af38c27d29ebf9d8c0f387b9.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a819aae4f0c711e50b4fd633922a3c1a176cb51e">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-maps-9.0.0_903e02e7415eee8bc953e999601dc7191a906673.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-tasks-9.0.0_f497bf9c9d12fab164ab80059fd3dcb4b62a95b3.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/RentNow360/pp/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2037e9ca4d646591bee9f196c93c4d4a7665e3e5">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/RentNow360-pp-unspecified_1edb8c59e27f1f370f89650417e1d5c57203873d.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.wdullaer/materialdatetimepicker/2.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a95fd025efad7b05be3d29737bec37652e0fdb9e">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.wdullaer-materialdatetimepicker-2.3.0_95710a9276e5914edcaa27f38941e9fa0da48007.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ef5c5c2afbd174d55cf1cfcac7d0346cbc4c1322">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-database-connection-9.0.0_20d19be426bf5fa43110609383a612f171c26756.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f4d7a07120e76988f3a15403838d323c2400db83">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/internal_impl-23.1.1_ed820a88f235347e30add8679f7888c7a6fe415f.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8c108c22c99e794eff255bb34d2a461200c4cbb0">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-animated-vector-drawable-23.2.0_296614b79eaebc0d6af264ba34856da32139c487.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-common-9.0.0_31ac30436522d20e382e0bf4e873ab040780b11c.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/RentNow360/common/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="14d8e2db765b78b2f6edbf655edb9d493314a257">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/RentNow360-common-unspecified_3c4bc52e738795d6e4bf64e0bcf6d50896464275.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-base-9.0.0_fef4c47c6652bde5dedec948d6aac557e2fdb541.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="733964f04c339e425439545b1d172c23b53f8c13">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-storage-9.0.0_cc2e993c1d3f54df5bdbc032bbb0f4a3cd31ac45.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/RentNow360/commonwidget/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c00e595289519cb6db85d56a3545144146624554">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/RentNow360-commonwidget-unspecified_92ed7d3a275b4f9c4c0b2656277fe68b913c649c.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="32a5a566ae197603d0bed3e6d1d275f6a771564e">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-database-9.0.0_72f373909a21828072ef1238031b5ff0c9067546.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/internal_impl-23.4.0_06eb80fa2492e27b95de49a3daa7ace0e5193852.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-support-v4-23.4.0_42413350d14b15be3f2396bf9dca2d2763d57027.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-design-23.1.1_9a2621157472dc848b22c5171087d968d081026a.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-analytics-9.0.0_0e3d93e40bac6eb14bd244e79853c551b2aac0f4.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/jackson-core-2.2.2_9bffdfb9640ad15397f3f44fd8af5f1f04d5940f.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-analytics-impl-9.0.0_c5ff9df077d03564c4b58fc5a2c12f3893da99a8.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-cardview-v7-23.4.0_c2611b445904345a7591807c1cbeb546d2b95927.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.commonsware.cwac/camera/0.6.10/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="de154bebddd5b9ff74ce96fb7cb6aeddf44e3f45">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.commonsware.cwac-camera-0.6.10_84196c67ba88733cb31d3a7b6877ac6e6a12651a.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="24536a7b97926a9c155c88425da6875adeb11b51">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-auth-module-9.0.0_36c3ad9a8fa6fa0f2c4959da2a95f3370a71672a.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-recyclerview-v7-23.1.1_9f710cc12537f76cfbe2666a0ee1705f0314909e.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-auth-9.0.0_00953d76acc9c30678ae8b007755d65ec3adabaa.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="70ddab48594608953b20164b82f1f890a9a8174a">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-auth-9.0.0_c05481137d5bc1a19b4c5af0e4713102ca60f166.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/glide-3.7.0_6fe72c81573671610ecd71505125a81efdcb0f15.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-multidex-1.0.1_a8867b5aaed1b6e5b9325cf1c7a5891b0a394cc0.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="292a9fa091757208efa65e77eef63088247e51f3">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-support-vector-drawable-23.2.0_e30324f32c20b35c1ec695edc5575190e427e4eb.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ed16ff19f0a9515604a0f08104ca0317b82e29e3">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-storage-common-9.0.0_bfdb04f599bd812bcb7ba7ed042c55342361141a.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/support-annotations-23.4.0_b29074aa8463d4a01db6467521b78809d33e9643.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.3.0/8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c/bolts-tasks-1.3.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/bolts-tasks-1.3.0_88503e44f4e496a08073b0d0f8d6dfd4e3e1e4cb.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-basement-9.0.0_da50c67e66f81b5a9771e280f397c890fae98e35.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="59cca9b91688dc2467754d36793b3d23bebd21a9">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-location-9.0.0_edd757ab144758a328172fc55351a304c0beb950.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.0.3/81994bbc1bd46454616b733bf31fe4a22018e056/firebase-client-jvm-2.0.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="81994bbc1bd46454616b733bf31fe4a22018e056">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/firebase-client-jvm-2.0.3_c961ec1df48452f9c4796ba7e3e9f68de141d86f.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/jackson-annotations-2.2.2_52d08e49929d005ab4f9815a3c048866c09d0645.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/RentNow360/panowidget/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8b53de24b4bd7d3bcb7a19c69a8664ea676a5eeb">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/RentNow360-panowidget-unspecified_c9f3e0acf087cd063ff58eb1676c8c257a0cb2b7.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5f0f6913a208a126269aaa68004ed0329a832c5b">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.firebase-firebase-auth-common-9.0.0_e88eb987a3a6aa31ef1dedf910c606cbe32d7725.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.3.0/bc535105332645408ef5f1380215cc954b842178/bolts-applinks-1.3.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="bc535105332645408ef5f1380215cc954b842178">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/bolts-applinks-1.3.0_4a01a0422d62f66767f23426d6a1ead6020e6707.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.0.3/1665cb30372ae93a46d9800adf5751bc48fa202f/firebase-client-android-2.0.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1665cb30372ae93a46d9800adf5751bc48fa202f">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/firebase-client-android-2.0.3_affd93eb5314ba14ce7a73d05f3aab157370734c.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/pub.devrel/easypermissions/0.1.5/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2ffd97c466e0021572f3c7333839c71ecdf393ed">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/pub.devrel-easypermissions-0.1.5_82bf89e488245adaa01ff396db04986312fb7eff.jar" />
+    </item>
+    <item
+        jar="/Users/arms/.gradle/caches/modules-2/files-2.1/com.firebase/geofire/1.1.1/aaddc090eaef03c8ca29baeac71d928fa9caf9d4/geofire-1.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="aaddc090eaef03c8ca29baeac71d928fa9caf9d4">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/geofire-1.1.1_1e52bbbd8710f95ef2978638e35b91ded688f1cc.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5ddf5f4817565c9db82613c16093f76640a54e15">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-support-v13-23.1.1_4224f69f34beaf997ed1c3636c73d054037e85ae.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.google.android.gms-play-services-auth-base-9.0.0_ede15eb5af83d3c8beca2a289d9114766c0faf8a.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6e3578f92f7462d1a935a1d36173e3bdd1234976">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/com.android.support-appcompat-v7-23.2.0_8e7e0af3086859d7a3ae6ccb86a04809bc6b76bc.jar" />
+    </item>
+    <item
+        jar="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/exploded-aar/io.github.yavski/fab-speed-dial/1.0.2/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3f13a6d5de9c7501e7dca2b9878ecd289987c88d">
+        <dex dex="/Users/arms/Documents/360Apps/RentNow360/app/build/intermediates/pre-dexed/facebook/debug/io.github.yavski-fab-speed-dial-1.0.2_5866674bf73eac4d7471bde196ad61b3aafe0097.jar" />
+    </item>
+
+</items>
